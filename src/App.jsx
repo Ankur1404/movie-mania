@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import {useDebounce} from 'react-use'
-import Search from "./components/search";
+import Search from "./components/Search";
 import Card from "./components/Card";
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
