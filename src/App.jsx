@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {useDebounce} from 'react-use'
 import Search from "./components/search";
-import Card from "./components/card";
+import Card from "./components/Card";
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 import { updateSearchCount } from "./appwrite";
@@ -40,7 +40,7 @@ const App = () => {
       }
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       setMovie(data.results || []); 
 
